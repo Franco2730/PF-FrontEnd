@@ -1,0 +1,45 @@
+.containerPrivacy  {
+  color: #000;
+  font-size: 16px; 
+  padding: 50px; 
+  position: relative;
+}
+
+.containerPrivacy::before {
+    content: "";
+    background-image: url(../../assets/logo/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    opacity: 0.5; 
+    /* position: absolute;  */
+    padding: 0;
+    top: 20%; 
+    left: 25%;
+    width: 100%;
+    height: 100%; 
+    z-index: -1; 
+  }
+  
+
+
+  @media screen and (max-width: 1300px) {
+    .containerPrivacy::before {
+  
+      background-size:contain; 
+      top: 60%; 
+      left: 67%; 
+      transform: translate(-50%, -50%);
+    }
+  
+   }
+  
+  @media screen and (max-width: 767px) {
+    .containerPrivacy::before {
+    
+      background-size:contain; 
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+    }
+  
+   }
